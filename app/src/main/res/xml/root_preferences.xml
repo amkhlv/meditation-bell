@@ -1,0 +1,68 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/sounds_header">
+        <Preference
+            app:key="mp3"
+            app:title="choose mp3"
+            />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/intervals_header">
+
+        <EditTextPreference
+            app:key="interval"
+            app:title="@string/interval_title"
+            app:useSimpleSummaryProvider="true"
+            />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Colors">
+        <Preference
+            app:key="@string/mainwin_bg"
+            app:title="window background color"
+            app:useSimpleSummaryProvider="true"
+            />
+        <Preference
+            app:key="@string/mainframe_bg"
+            app:title="frame background color"
+            app:useSimpleSummaryProvider="true"
+            />
+        <Preference
+            app:key="@string/ticking_fg"
+            app:title="running minutes text color"
+            app:useSimpleSummaryProvider="true"
+            />
+        <Preference
+            app:key="@string/ticking_bg"
+            app:title="running minutes background color"
+            app:useSimpleSummaryProvider="true"
+            />
+        <Preference
+            app:key="@string/stopped_fg"
+            app:title="stopped minutes text color"
+            app:useSimpleSummaryProvider="true"
+            />
+        <Preference
+            app:key="@string/stopped_bg"
+            app:title="stopped minutes background color"
+            app:useSimpleSummaryProvider="true"
+            />
+        <Preference
+            app:key="@string/overtime_bg"
+            app:title="overtime minutes background color"
+            app:useSimpleSummaryProvider="true"
+            />
+        <Preference
+            app:key="@string/buttons_fg"
+            app:title="buttons text color"
+            app:useSimpleSummaryProvider="true"
+            />
+        <Preference
+            app:key="@string/buttons_bg"
+            app:title="buttons background color"
+            app:useSimpleSummaryProvider="true"
+            />
+    </PreferenceCategory>
+
+</PreferenceScreen>

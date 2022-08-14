@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">🔔</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <!-- MP3 filename -->
+    <string name="mp3_filename">sino.mp3</string>
+    <!-- Preference keys -->
+    <string name="mp3">mp3</string>
+    <!-- UI preference keys -->
+    <string name="interval">interval</string>
+    <string name="default_interval">40</string>
+    <string name="start_button_title">start</string>
+    <string name="stop_button_title">stop</string>
+    <string name="mainwin_bg">mainwin_bg</string>
+    <string name="mainframe_bg">mainframe_bg</string>
+    <string name="ticking_fg">ticking_fg</string>
+    <string name="ticking_bg">ticking_bg</string>
+    <string name="stopped_fg">stopped_fg</string>
+    <string name="stopped_bg">stopped_bg</string>
+    <string name="overtime_bg">overtime_bg</string>
+    <string name="buttons_fg">button_fg</string>
+    <string name="buttons_bg">button_bg</string>
+    <!-- filenames -->
+    <string name="final_bell_filename">sino.mp3</string>
+    <!-- Preference Titles -->
+    <string name="sounds_header">Sounds</string>
+    <string name="intervals_header">Times</string>
+    <string name="interval_title">Default Interval</string>
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="title_activity_color_selector">ColorSelector</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+</resources>
