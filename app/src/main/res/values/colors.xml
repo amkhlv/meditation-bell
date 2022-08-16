@@ -11,8 +11,9 @@
     <color name="mainframe_bg">#FF65170D</color>
     <color name="ticking_fg">#FFFD6B00</color>
     <color name="ticking_bg">#FF18004D</color>
-    <color name="stopped_fg">#FFF6FF8F</color>
-    <color name="stopped_bg">#FF2D402E</color>
+    <color name="stopped_fg">#FF2C2F90</color>
+    <color name="stopped_bg">#FFFDC56D</color>
+    <color name="overtime_fg">#FF000000</color>
     <color name="overtime_bg">#FFCBF0FD</color>
     <color name="buttons_fg">#FFCBA0A0</color>
     <color name="buttons_bg">#FF200000</color>

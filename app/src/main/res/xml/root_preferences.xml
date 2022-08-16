@@ -49,6 +49,11 @@
             app:useSimpleSummaryProvider="true"
             />
         <Preference
+            app:key="@string/overtime_fg"
+            app:title="overtime minutes text color"
+            app:useSimpleSummaryProvider="true"
+            />
+        <Preference
             app:key="@string/overtime_bg"
             app:title="overtime minutes background color"
             app:useSimpleSummaryProvider="true"

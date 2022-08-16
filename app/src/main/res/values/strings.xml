@@ -16,6 +16,7 @@
     <string name="ticking_bg">ticking_bg</string>
     <string name="stopped_fg">stopped_fg</string>
     <string name="stopped_bg">stopped_bg</string>
+    <string name="overtime_fg">overtime_fg</string>
     <string name="overtime_bg">overtime_bg</string>
     <string name="buttons_fg">button_fg</string>
     <string name="buttons_bg">button_bg</string>

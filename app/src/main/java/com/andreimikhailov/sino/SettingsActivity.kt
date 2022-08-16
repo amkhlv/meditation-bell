@@ -4,6 +4,7 @@ package com.andreimikhailov.sino
 import android.app.Activity
 import android.content.Intent
 import android.content.SharedPreferences
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import androidx.activity.result.ActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
@@ -58,26 +59,27 @@ class SettingsActivity : AppCompatActivity() {
                 startForResult.launch(intent)
                 true
             }
-            fun setColor(key: Int) {
+            fun setColor(key: Int, colorid: Int) {
                 val k = context?.resources?.getString(key)
                 val ticking_fg: Preference? = findPreference(k!!)
                 ticking_fg?.setOnPreferenceClickListener {
                     val i: Intent =  Intent(context, ColorSelectorActivity::class.java)
-
                     i.putExtra("what", k!!)
+                    i.putExtra("colorid", colorid)
                     startActivity(i)
                     true
                 }
             }
-            setColor(R.string.mainwin_bg)
-            setColor(R.string.mainframe_bg)
-            setColor(R.string.ticking_fg)
-            setColor(R.string.ticking_bg)
-            setColor(R.string.stopped_fg)
-            setColor(R.string.stopped_bg)
-            setColor(R.string.overtime_bg)
-            setColor(R.string.buttons_fg)
-            setColor(R.string.buttons_bg)
+            setColor(R.string.mainwin_bg, R.color.mainwin_bg)
+            setColor(R.string.mainframe_bg, R.color.mainframe_bg)
+            setColor(R.string.ticking_fg, R.color.ticking_fg)
+            setColor(R.string.ticking_bg, R.color.ticking_bg)
+            setColor(R.string.stopped_fg, R.color.stopped_fg)
+            setColor(R.string.stopped_bg, R.color.stopped_bg)
+            setColor(R.string.overtime_fg, R.color.overtime_fg)
+            setColor(R.string.overtime_bg, R.color.overtime_bg)
+            setColor(R.string.buttons_fg, R.color.buttons_fg)
+            setColor(R.string.buttons_bg, R.color.buttons_bg)
 
         }
     }

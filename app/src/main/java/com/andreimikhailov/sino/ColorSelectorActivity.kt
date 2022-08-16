@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.core.graphics.blue
 import androidx.core.graphics.green
 import androidx.core.graphics.red
@@ -32,8 +33,16 @@ class ColorSelectorActivity : AppCompatActivity() {
         val btn: Button = findViewById(R.id.btn_setcolor)
         val prefs = PreferenceManager.getDefaultSharedPreferences(this)
         val extras = getIntent().getExtras();
+
         extras?.getString("what")?.let {
-            val old = prefs.getInt(it, Color.GREEN)
+            val old = prefs.getInt(
+                it,
+                ContextCompat.getColor(
+                    applicationContext,
+                    extras?.getInt("colorid") ?: Color.GREEN
+                )
+            )
+
             picker.color = old
             val hsv = FloatArray(3)
             Color.RGBToHSV(old.red, old.green, old.blue, hsv)

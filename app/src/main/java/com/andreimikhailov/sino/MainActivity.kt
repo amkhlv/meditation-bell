@@ -65,6 +65,9 @@ class Update(
                 mins.setBackgroundColor(
                     prefs.getInt(context.resources.getString(R.string.overtime_bg), ContextCompat.getColor(context, R.color.overtime_bg))
                 )
+                mins.setTextColor(
+                    prefs.getInt(context.resources.getString(R.string.overtime_fg), ContextCompat.getColor(context, R.color.overtime_fg))
+                )
                 space.foreground = ColorDrawable(prefs.getInt(context.resources.getString(R.string.overtime_bg), ContextCompat.getColor(context, R.color.overtime_bg)))
             }
             mins.postDelayed(
