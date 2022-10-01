@@ -18,6 +18,7 @@ import java.io.File
 import java.io.FileOutputStream
 import java.nio.file.Path
 import java.nio.file.Paths
+import java.time.LocalDateTime
 import java.time.LocalTime
 import kotlin.io.path.exists
 
@@ -26,7 +27,7 @@ class State(var isTicking: Boolean)
 class Update(
     private val mins: EditText,
     private val space: View,
-    private val started: LocalTime,
+    private val started: LocalDateTime,
     private val howlong: Int,
     private val alreadySounded: Boolean,
     private val context: Context,
@@ -35,7 +36,7 @@ class Update(
     ) : Runnable {
     override fun run() {
         if (state.isTicking) {
-            val now: LocalTime = LocalTime.now()
+            val now: LocalDateTime = LocalDateTime.now()
             val passed: Long = started.until(now, java.time.temporal.ChronoUnit.MINUTES)
             mins.setText(String.format("%d", howlong - passed), TextView.BufferType.NORMAL)
             var sounded = alreadySounded
@@ -180,7 +181,7 @@ class MainActivity : AppCompatActivity() {
                 val hl: Int? = editMins.text.toString().toIntOrNull()
                 if (hl != null) {
                     editMins.postDelayed(
-                        Update(editMins, space, LocalTime.now(), hl, false, applicationContext, state, prefs),
+                        Update(editMins, space, LocalDateTime.now(), hl, false, applicationContext, state, prefs),
                         500
                     )
                 }
